@@ -5,7 +5,7 @@
     <!-- <wux-icon slot="right" type="ios-more" size="23" /> -->
   </wux-navbar>
   <view class="search">
-    <search bindonsearch="handleSearch" bindonInput="handleInput" bindonFeedTap="onFeedTap" />
+    <search bindonsearch="handleSearch" bindonInput="handleInput" bindonFeedTap="onFeedTap" bindonSetTap="onSetTap"/>
   </view>
   <view style="background: linear-gradient(#f8f8f8,#eeeeee)">
     <view class="Icon" style="position:fixed;right: 0;bottom: 10%;transform: translate(-50%, -50%);background-color:#387ef5;text-align:center;box-shadow: 1rpx 1rpx 30rpx #387ef5;z-index:1" bindtap="onTap">

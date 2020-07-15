@@ -17,6 +17,9 @@ Page({
                                 title: '正在登陆...',
                             })
                             app.globalData.userInfo = res.userInfo
+                            wx.redirectTo({
+                                url: '../home/home'
+                            }),
                             wx.login({
                                 success: res => {
                                     if (res.code) {
@@ -32,7 +35,7 @@ Page({
                                                 app.globalData.openId = res1.data.data;
                                                 console.log(res, res1)
                                                 wx.redirectTo({
-                                                    url: '../Homeg/Home'
+                                                    url: '../home/home'
                                                 })
                                             }
 
@@ -68,7 +71,7 @@ Page({
                                 app.globalData.token = res.code;
                                 app.globalData.openId = res1.data.data;
                                 wx.redirectTo({
-                                    url: '../Home/Home'
+                                    url: '../home/home'
                                 })
                             }
                         })
@@ -92,7 +95,7 @@ Page({
     onPagetoSquare() {
         app.globalData.token = '';
         wx.navigateTo({
-            url: '../Square/Square'
+            url: '../square/square'
         })
     }
 });

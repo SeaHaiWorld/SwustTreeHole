@@ -1,10 +1,9 @@
 {
   "pages": [
     "pages/auth/auth",
-    "pages/Home/Home",
-    "pages/Square/Square",
+    "pages/home/home",
+    "pages/square/square",
     "pages/logs/logs",
-    "pages/treeHole/treeHole",
     "pages/itemDetail/itemDetail",
     "pages/publish/publish",
     "pages/listPage/listPage",

@@ -53,9 +53,8 @@ Page({
     },
 
     onTap() {
-        const { tagid } = this.data;
         // wx.navigateTo({ url: '../annualRing/annualRing' });
-        wx.redirectTo({ url: '../annualRing/annualRing' });
+        wx.navigateBack()
     },
 
     uploadBgImg() {

@@ -82,9 +82,9 @@ Page({
             success(e) {
               app.globalData.refreshHome = true;
               wx.navigateBack();
-              wx.redirectTo({
-                url: '../treeHome/treeHome',
-              })
+              // wx.redirectTo({
+              //   url: '../square/square',
+              // })
             }
           })
         }

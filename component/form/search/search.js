@@ -7,7 +7,7 @@ Component({
   properties: {
     avatar:{
       type: String,
-      value: "https://thirdqq.qlogo.cn/qqapp/1109918821/9B271E3EB53E6311AED062541689957F/100"
+      value: 'https://thirdqq.qlogo.cn/qqapp/1109918821/9C862BA6095FADB9F8EAFD49C26C7585/100'
     },
     icon: {
       type: String,
@@ -132,6 +132,10 @@ Component({
         inputing: false
       })
       this.triggerEvent('onclean', e, { bubbles: true });
+    },
+
+    onSetTap: function (e) {
+      this.triggerEvent('onSetTap', e, { bubbles: true });
     },
 
     onFeedTap: function (e) {

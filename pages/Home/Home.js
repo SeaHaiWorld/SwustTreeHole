@@ -96,7 +96,7 @@ Page({
         }, 1500);
     },
     squareClick: function () {
-        wx.navigateTo({ url: '../Square/Square' })
+        wx.navigateTo({ url: '../square/square' })
     },
     leafClick: function () {
         wx.navigateTo({ url: '../user/user' })
@@ -107,6 +107,6 @@ Page({
         if(e.target.id==123){
             wx.redirectTo({ url: `../listPage/listPage?type=0` })
         }else
-        wx.navigateTo({ url: `../Square/Square?tagid=${e.target.id}` })
+        wx.navigateTo({ url: `../square/square?tagid=${e.target.id}` })
     },
 })

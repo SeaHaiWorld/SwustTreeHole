@@ -26,7 +26,7 @@
     </wux-col>
     <wux-col span="2">
       <view style="padding: 0rpx 10rpx 0rpx 40rpx">
-        <view class="searchicon" style="background-color:#387ef5;text-align:center;box-shadow: 1rpx 1rpx 8rpx #387ef5">
+        <view class="searchicon" style="background-color:#387ef5;text-align:center;box-shadow: 1rpx 1rpx 8rpx #387ef5" bindtap='onSetTap'>
           <wux-icon type="ios-options" top="13" left="-2" size="22" color="white" />
         </view>
       </view>

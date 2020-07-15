@@ -27,7 +27,7 @@ Page({
     backClass: [
       'https://tree-home-1259219507.cos.ap-chengdu.myqcloud.com/lidong.png',
       'https://tree-home-1259219507.cos.ap-chengdu.myqcloud.com/timg.jpg',
-      'https://tree-home-1259219507.cos.ap-chengdu.myqcloud.com/QQ.jpg'
+      'https://tree-home-1259219507.cos.ap-chengdu.myqcloud.com/timg.jpg'
     ],
     currentItemId: 2,
     inputVal: "",
@@ -211,7 +211,7 @@ Page({
 
   returnIndex() {
     wx.navigateTo({
-      url: '../Home/Home'
+      url: '../home/home'
     });
   },
 
@@ -220,6 +220,13 @@ Page({
       url: '../feed/feed'
     });
   },
+
+  onSetTap() {
+    wx.navigateTo({
+      url: '../user/user'
+    });
+  },
+
 
   onShareAppMessage: function(res) {
     if (res.from === "menu") {
