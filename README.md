@@ -2,22 +2,22 @@
 
 西南科技大学自己的交流圈
 
-![Image text](https://tree-home-1259219507.cos.ap-chengdu.myqcloud.com/IMG_7294.PNG)
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0715/150629_6cc25341_5137300.png "IMG_7294.PNG")
 
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0715/150707_1eb43985_5137300.png "IMG_7295.PNG")
 
-![Image text](https://tree-home-1259219507.cos.ap-chengdu.myqcloud.com/IMG_7295.PNG)
+![输入图片说明](https://images.gitee.com/uploads/images/2020/0715/150743_e06c6f29_5137300.png "IMG_7296.PNG")
 
-![Image text](https://tree-home-1259219507.cos.ap-chengdu.myqcloud.com/IMG_7296.PNG)
+![Image text](https://images.gitee.com/uploads/images/2020/0715/150451_44f26f5d_5137300.png)
 
-![Image text](https://tree-home-1259219507.cos.ap-chengdu.myqcloud.com/IMG_7297.PNG)
+![Image text](https://images.gitee.com/uploads/images/2020/0715/150451_fe150438_5137300.png)
 
-![Image text](https://tree-home-1259219507.cos.ap-chengdu.myqcloud.com/IMG_7289.PNG)
+![Image text](https://images.gitee.com/uploads/images/2020/0715/150451_e18ee47e_5137300.png)
 
-![Image text](https://tree-home-1259219507.cos.ap-chengdu.myqcloud.com/IMG_7290.PNG)
+![Image text](https://images.gitee.com/uploads/images/2020/0715/150451_c5d4f527_5137300.png)
 
-![Image text](https://tree-home-1259219507.cos.ap-chengdu.myqcloud.com/IMG_7291.PNG)
+![Image text](https://images.gitee.com/uploads/images/2020/0715/150451_fd6aafb0_5137300.png)
 
-![Image text](https://tree-home-1259219507.cos.ap-chengdu.myqcloud.com/IMG_7292.PNG)
 
 
 
