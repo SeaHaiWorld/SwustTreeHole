@@ -1,0 +1,68 @@
+<view>
+    <!--    <view class="personal" >-->
+    <!--        <image class="avatar" mode="aspectFit" src="https://ftp.bmp.ovh/imgs/2019/11/af80a02290805716.jpg" />-->
+    <!--        <text class="nickName">{{nickName}}</text>-->
+    <!--        <text class="time">您的年轮已生长12天</text>-->
+    <!--    </view>-->
+    <!-- <view class="personal-1" >
+        <image class="avatar-1" mode="aspectFit" src="https://ftp.bmp.ovh/imgs/2019/11/af80a02290805716.jpg" />
+        <text class="nickName-1">{{nickName}}</text>
+        <text class="time-1">您的年轮已生长{{time}}天</text>
+    </view> -->
+
+    <!-- <image src="https://tree-home-1259219507.cos.ap-chengdu.myqcloud.com/wave.gif" mode="scaleToFill" class="gif-wave"></image>
+</view> -->
+    <movebutton
+        class="movebutton"
+        bind:buttontap="onTap"
+        top="70"
+        left="60"
+        width="70"
+        height="70"
+        src="https://tree-home-1259219507.cos.ap-chengdu.myqcloud.com/left.png"
+        removable="false"
+    ></movebutton>
+    <view class="UCenter-bg" style="background-image:url('https://tree-home-1259219507.cos.ap-chengdu.myqcloud.com/1.jpg');" bindtap="uploadBgImg">
+        <image src="{{userInfo.avatarUrl}}" class="png round" mode="widthFix"></image>
+        <view class="text-xl">{{pageName}} </view>
+
+        <image src="https://tree-home-1259219507.cos.ap-chengdu.myqcloud.com/wave.gif" mode="scaleToFill" class="gif-wave"></image>
+    </view>
+    <view style="height: 40px; background-color: white;" />
+    <block qq:for="{{publishList}}" qq:for-item="item" qq:key="index">
+        <card
+            nickName="{{item.nickName}}"
+            id="{{item.remarkid}}"
+            context="{{item.context}}"
+            star="{{item.star?item.star:0}}"
+            comment="{{item.comment?item.comment:0}}"
+            flag="{{item.flag}}"
+            img="{{item.imgurl?item.imgurl:[]}}"
+            avatar="{{item.avatarUrl?item.avatarUrl:''}}"
+            publishDate="{{type==0?item.publishdate:item.stardate}}"
+            labelList="{{item.topic}}"
+            bindhandleClick="handleClick"
+            bindhandleLike="handleLike"
+        ></card>
+    </block>
+    <block qq:for="{{commentList}}" qq:for-item="item" qq:key="index">
+        <commentcard
+            nickName="{{userInfo.nickName}}"
+            avatar="{{userInfo.avatarUrl}}"
+            comment="{{item.comments}}"
+            otherAvatar="{{item.avatarUrl?item.avatarUrl:''}}"
+            otherName="{{item.nickName}}"
+            commentdate="{{item.commentdate}}"
+            context="{{item.context}}"
+            id="{{item.remarkid}}"
+            imgurl="{{item.imgurl}}"
+            bindhandleClick="handleClick"
+        ></commentcard>
+    </block>
+    <view class="loading">
+        <view class="weui-loadmore">
+            <view class="{{total/8>=pagination.currentPage?weui-loading:''}}"></view>
+            <view class="weui-loadmore__tips">{{pagination.total/pagination.pageSize>pagination.currentPage?"加载中":"已经到底了"}}</view>
+        </view>
+    </view>
+</view>

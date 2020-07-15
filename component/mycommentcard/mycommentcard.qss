@@ -1,0 +1,63 @@
+.card {
+  background: #eeeeee;
+  padding-bottom:3rpx;
+}
+
+.card-item {
+  background: #ffffff;
+  padding-bottom: 20rpx;
+}
+
+.card-item-hover {
+  //opacity: 0.5;
+  //background: #f7f7f7;
+  box-shadow: 0rpx 10rpx 50rpx 2rpx rgba(1, 1, 1, 0.1);
+}
+
+.card-title {
+  display: flex;
+  width: 100%;
+  line-height: 50rpx;
+  padding:15rpx 15rpx;
+}
+
+.card-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+}
+.nickNameFlex {
+  flex: auto;
+  padding-left: 30rpx;
+}
+
+.card-title-txt {
+  display: inline-block;
+  color: black;
+  height: 70rpx;
+  flex: auto;
+  line-height:32rpx;
+  padding-left: 30rpx;
+}
+
+.card-comment-txt {
+  display: inline-block;
+  color: black;
+  font-size: 28rpx;
+  display: flex;
+  flex: auto;
+  padding-left: 30rpx;
+}
+
+.commentdate {
+  display: flex;
+  flex: auto;
+  padding-left: 30rpx;
+}
+
+.card-body {
+  background-color: #eeeeee;
+  margin: 0 3% 0 3%;
+  display: flex;
+  width: 94%;
+}

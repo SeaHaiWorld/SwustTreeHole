@@ -1,0 +1,186 @@
+.icon-poA {
+  width: 130rpx;
+  height: 130rpx;
+  position: fixed;
+  top: 48%;
+  left: 1%;
+}
+.icon-poB {
+  width: 130rpx;
+  height: 130rpx;
+  position: fixed;
+  top: 45%;
+  left: 80%;
+}
+
+.icon-poC {
+  width: 130rpx;
+  height: 130rpx;
+  position: fixed;
+  top: 22%;
+  left: 31%;
+}
+
+.icon-poD {
+  width: 130rpx;
+  height: 130rpx;
+  position: fixed;
+  bottom:24.5%;
+  left: 21%;
+}
+
+.icon-poE {
+  width: 130rpx;
+  height: 130rpx;
+  position: fixed;
+  bottom:24.5%;
+  left: 57%;
+  z-index: 5;
+}
+
+.icon-textA {
+  width: 130rpx;
+  height: 130rpx;
+  position: fixed;
+  top: 51.5%;
+  left: 6%;
+  font-size: 27rpx;
+}
+
+.icon-textB {
+  width: 130rpx;
+  height: 130rpx;
+  position: fixed;
+  top: 48.5%;
+  left: 85%;
+  font-size: 27rpx;
+}
+
+.icon-textC {
+  width: 130rpx;
+  height: 130rpx;
+  position: fixed;
+  top: 25.5%;
+  left: 36%;
+  font-size: 27rpx;
+}
+
+.icon-textD {
+  width: 130rpx;
+  height: 130rpx;
+  position: fixed;
+  bottom:21.5%;
+  left: 26%;
+  z-index: 5;
+  font-size: 27rpx;
+}
+
+.icon-textE {
+  width: 130rpx;
+  height: 130rpx;
+  position: fixed;
+  bottom:21.5%;
+  left: 62%;
+  z-index: 5;
+  font-size: 27rpx;
+}
+
+.sun {
+  width: 120rpx;
+  height: 110rpx;
+  position: fixed;
+  top: 3%;
+  left: 7%;
+}
+
+.cloud1 {
+  width: 90rpx;
+  height: 100rpx;
+  position: fixed;
+  top: 7%;
+  left: 46%;
+}
+
+.cloud2 {
+  width: 90rpx;
+  height: 100rpx;
+  position: fixed;
+  top: 5%;
+  left: 78%;
+}
+
+.cloud3 {
+  width: 90rpx;
+  height: 100rpx;
+  position: fixed;
+  top: 78%;
+  left: 50%;
+}
+
+.annual {
+  width: 740rpx;
+  height: 740rpx;
+  position: fixed;
+  top: 18%;
+  margin-left: 1%;
+}
+
+.button-icon {
+  position: fixed;
+  bottom: 5%;
+}
+
+.icon-bottom {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 440rpx;
+}
+
+.icon-leaf {
+  width: 100rpx;
+  height: 100rpx;
+  position: fixed;
+  bottom: 4%;
+  left: 80%;
+  z-index: 3;
+}
+
+.background {
+  width: 750rpx;
+  height: 1800rpx;
+  position: fixed;
+  background-image: url("https://tree-home-1259219507.cos.ap-chengdu.myqcloud.com/2.png");
+  background-size: 750rpx 1800rpx;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.squareDot {
+  width: 120rpx;
+  height: 110rpx;
+  position: fixed;
+  bottom: 2%;
+  left: 5%;
+  z-index: 4;
+}
+
+.squaretext {
+  width: 100rpx;
+  height: 50rpx;
+  position: fixed;
+  bottom: 2%;
+  left: 8%;
+  z-index: 100;
+  font-size: 27rpx;
+}
+
+.leaftext {
+  width: 100rpx;
+  height: 50rpx;
+  position: fixed;
+  bottom: 2%;
+  left: 82.5%;
+  z-index: 3;
+  font-size: 27rpx;
+}

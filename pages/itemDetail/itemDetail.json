@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "西科树屋",
+  "component":true,
+  "usingComponents": {
+    "list":"../../component/list/icon_list/icon_list",
+    "icon":"../../component/base/enhance_icon/enhance_icon",
+    "card":"../../component/commentcard/commentcard",
+    "buttomInput": "../../component/commentinput/commentinput"
+  },
+  "enablePullDownRefresh":true
+}

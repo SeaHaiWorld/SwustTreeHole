@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "card": "../../component/squareCard/squareCard",
+        "tab": "../../component/senior/tabs/tabs",
+        "search": "../../component/form/search/search",
+        "movebutton":"../../component/button/suspension_button/suspension_button"
+    }
+}

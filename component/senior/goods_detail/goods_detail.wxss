@@ -1,0 +1,44 @@
+/* component/senior/goods_detail/goods_detail.wxss */
+
+.body {
+  padding: 30rpx;
+}
+.swiper {
+  height: 750rpx;
+}
+.image {
+  width: 750rpx;
+  height: 750rpx;
+  position: absolute;
+}
+.test {
+  position: relative; 
+  top: 0; left: 0; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.title-text {
+  font-weight: bold;
+  line-height: 46rpx;
+}
+.price {
+  margin: 32rpx 0 10rpx 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.price-text {
+  margin-right: 8rpx;
+  font-weight: bold;
+}
+.detail {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}

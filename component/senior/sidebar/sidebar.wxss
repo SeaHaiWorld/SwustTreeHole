@@ -1,0 +1,11 @@
+/* component/senior/sidebar/sidebar.wxss */
+.items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 35rpx 10rpx;
+}
+.text,
+.items {
+  transition: all 200ms;
+}

@@ -1,0 +1,24 @@
+/* component/form/search/search.wxss */
+
+.component {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8rpx 28rpx;
+}
+
+.input {
+  margin: 0 18rpx;
+}
+
+.searchicon {
+  width: 68rpx;
+  height: 68rpx;
+  border-radius: 34rpx;
+}

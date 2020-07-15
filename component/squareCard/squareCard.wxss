@@ -1,0 +1,98 @@
+.card {
+  background: #eee;
+  padding: 18rpx 18rpx 8rpx;
+}
+
+.card-item {
+  background: #fff;
+  padding-top: 3rpx;
+  border-radius: 27rpx;
+  box-shadow: 0rpx 0rpx 5rpx rgba(1, 1, 1, 0.1);
+}
+
+.card-title {
+  padding: 10rpx 15rpx 0;
+  display: flex;
+  height: 90rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+.card-imgs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card-img {
+  /* width: 218rpx;
+  height: 218rpx; */
+  margin: 0 5rpx;
+}
+
+.card-avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+}
+
+.nickNameFlex {
+  position: absolute;
+  left: 18%;
+}
+
+.card-content {
+  padding: 10rpx 20rpx 10rpx 25rpx;
+  font-size: 30rpx;
+  line-height: 55rpx;
+  word-wrap: break-word;
+  word-break: break-all;
+  color: #5b5b5b;
+  overflow: hidden;
+}
+
+.card-actions {
+  width: 100%;
+  height: 55rpx;
+  display: flex;
+  flex-direction: row;
+  text-align: right;
+}
+
+.comments-publishDate {
+  width: 520rpx;
+  height: 32rpx;
+  font-size: 27rpx;
+  text-align: left;
+  padding: 0 0 0 25rpx;
+  color: #5b5b5b;
+}
+
+.star {
+  padding: 9rpx 12rpx 0 0;
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.star-content {
+  width: 45rpx;
+  font-size: 30rpx;
+  text-align: center;
+}
+
+.icon-path {
+  width: 100rpx;
+  text-align: center;
+  display: flex;
+}
+
+.comments {
+  padding: 8rpx 12rpx 0 0;
+  width: 33rpx;
+  height: 33rpx;
+}
+
+.comments-content {
+  width: 45rpx;
+  font-size: 30rpx;
+  text-align: center;
+}

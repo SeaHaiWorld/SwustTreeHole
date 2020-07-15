@@ -1,0 +1,33 @@
+<view style="z-index:110">
+  <cu-custom bgColor="none-bg text-white" isBack="{{true}}">
+    <view slot="backText">返回</view>
+    <view slot="content"></view>
+  </cu-custom>
+</view>
+<view class="bg" style="position: fixed;z-index:-1">
+</view>
+<view style="padding-top:230rpx;z-index:1">
+  <view class="Icon" style="position: absolute;left: 50%;transform: translate(-50%, -50%);background-color:#387ef5;text-align:center;box-shadow: 1rpx 1rpx 30rpx #387ef5;z-index:1" bindtap="publish">
+    <text class="cuIcon-discoverfill" style="font-size:68rpx"></text>
+  </view>
+  <view class="cu-form-group flex padding justify-center" style="border-top:0rpx;padding: 135rpx 0 35rpx;border-radius: 65rpx 65rpx 0 0;height:50rpx;z-index:2">
+    <view>一起畅所欲言吧！</view>
+  </view>
+  <view class="cu-form-group publishtextarea" style="border-top:0rpx;z-index:2">
+    <textarea placeholder="输入#美食#点击星球发送，就可以让大家看见你的分享啦！想和大家分享什么呢？新鲜事、美食、开心事..." style="height: 16em" maxlength="-1" disabled="{{modalName!=null}}" placeholder-class="placeholder" bindconfirm="" bindinput="bindKeyInput" value="{{iptVal}}">
+    </textarea>
+  </view>
+  <view class="cu-form-group" style="border-top:0rpx;z-index:2">
+    <view class="grid col-3 grid-square flex-sub">
+      <view class="padding-xs bg-img" wx:for="{{files}}" wx:key="index">
+        <image src="{{item}}"></image>
+        <view class="cu-tag bg-red">
+          <text class="icon-close" bindtap="removeAttachment" data-idx="{{index}}"></text>
+        </view>
+      </view>
+      <view class="padding-xs solids">
+        <text class="icon-cameraadd" bindtap="bindChooseImage"></text>
+      </view>
+    </view>
+  </view>
+</view>

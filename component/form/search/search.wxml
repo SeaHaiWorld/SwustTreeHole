@@ -1,0 +1,35 @@
+<!--component/form/search/search.wxml-->
+<view>
+  <wux-row>
+    <wux-col span="1">
+      <view style="padding: 0rpx 15rpx 0rpx">
+        <image class="searchicon" src="{{avatar}}"></image>
+      </view>
+    </wux-col>
+    <wux-col span="8">
+      <view style="padding:0 0rpx 0 35rpx">
+        <view class='body' style='background: {{ bgColor }}; border-radius: {{ radius }}rpx; height: {{ height }}rpx;'>
+          <image src='{{ icon }}' wx:if='{{ icon != undefined && icon != "" ? true : false }}' style='width: {{ iconSize }}rpx; height: {{ iconSize }}rpx'></image>
+          <icon type='search' wx:if='{{ icon != undefined && icon != "" ? false : true }}' size='{{ iconSize }}rpx'></icon>
+          <input class='input' value='{{ value }}' placeholder='{{ placeholder }}' focus='{{ focus }}' bindconfirm="onButtonTap" bindinput='onInput' style='font-size: {{ textSize }}rpx; color: {{ color }}; width: {{ width }}rpx'></input>
+          <icon type='clear' size='{{ 1 * iconSize - 8 }}rpx' hidden='{{ !inputing }}' style='width: {{ 1 * iconSize - 8 }}rpx; height: {{ 1 * iconSize - 8 }}rpx' bindtap='onCleanTap'></icon>
+          <view hidden='{{ inputing }}' style='width: {{ 1 * iconSize - 8 }}rpx; height: {{ 1 * iconSize - 8 }}rpx'></view>
+        </view>
+      </view>
+    </wux-col>
+    <wux-col span="1">
+      <view style="padding: 0rpx 0rpx 0rpx 19rpx">
+        <view class="searchicon" style="background-color:#33cd5f;text-align:center;box-shadow: 1rpx 1rpx 8rpx #33cd5f;" bindtap='onFeedTap'>
+          <wux-icon top="10" type="ios-mail" left="-2" size="26" color="white" />
+        </view>
+      </view>
+    </wux-col>
+    <wux-col span="2">
+      <view style="padding: 0rpx 10rpx 0rpx 40rpx">
+        <view class="searchicon" style="background-color:#387ef5;text-align:center;box-shadow: 1rpx 1rpx 8rpx #387ef5">
+          <wux-icon type="ios-options" top="13" left="-2" size="22" color="white" />
+        </view>
+      </view>
+    </wux-col>
+  </wux-row>
+</view>

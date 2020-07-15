@@ -1,0 +1,63 @@
+.detail-title {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.buttomInput {
+  width: 100%;
+  background-color: white;
+  padding: 20rpx 0rpx 21rpx 0rpx;
+  position: fixed;
+  bottom: 0;
+}
+
+.nickName {
+  padding-left: 18%;
+}
+
+.newcomment {
+  background-color:#eeeeee;
+  padding-top: 40rpx;
+}
+
+.title {
+  padding: 20rpx 20rpx 0;
+  background: #ffffff;
+  font-size: 36rpx;
+  line-height:70rpx;
+  height:90rpx;
+  border-top: 1.5rpx solid #eeeeee;
+  padding-bottom: 1.5rpx solid #eeeeee;
+}
+
+.nocomment {
+  padding: 20rpx 20rpx 0;
+  background-color: white;
+  font-size: 30rpx;
+  height:175rpx;
+  text-align: center;
+}
+
+.commentitem {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.card-img {
+  width:210rpx;
+  height:210rpx;
+  margin:0 5rpx;
+}
+
+.label{
+  height:50rpx;
+  float:left;
+  margin-left: 2%;
+  line-height:50rpx;
+  border-radius:35rpx;
+  font-size:14px;
+  border:1px solid #DBDBDB;
+  text-align: center;
+  color: #999999;
+  width:12%;
+  background-color:#FFA404;
+}

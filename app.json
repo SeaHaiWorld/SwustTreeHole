@@ -1,0 +1,23 @@
+{
+  "pages": [
+    "pages/auth/auth",
+    "pages/Home/Home",
+    "pages/Square/Square",
+    "pages/logs/logs",
+    "pages/treeHole/treeHole",
+    "pages/itemDetail/itemDetail",
+    "pages/publish/publish",
+    "pages/listPage/listPage",
+    "pages/user/user",
+    "pages/feed/feed"
+  ],
+  "window": {
+    "navigationStyle": "custom"
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom",
+    "wux-navbar": "../../dist/navbar/index",
+    "wux-icon": "../../dist/icon/index"
+  }
+}

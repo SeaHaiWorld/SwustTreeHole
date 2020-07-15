@@ -1,0 +1,6 @@
+<!--component/button/suspension_button/suspension_button.wxml-->
+<button open-type="{{ openType }}" class='component cus' style='width: {{ width }}rpx; height: {{ height }}rpx; left: {{ mLeft }}; top: {{ mTop }}; {{ mTheme }};z-index:1000;box-shadow: 0 8rpx 40rpx #dddddd' catchtap='onTap' catchtouchmove='onMove' bindtouchstart='onMoveStart'>
+  <image src='{{ src }}' wx:if='{{ src ? true : false }}' class='bgImg' style='width: {{ width - 2 * imgMargin }}rpx; height: {{ height - 2 * imgMargin }}rpx;'></image>
+  <text wx:else class='img-cus'></text>
+  <text class='text' style='color: {{ textColor }}; font-size: {{ textSize }}rpx;'>{{ text }}</text>
+</button>

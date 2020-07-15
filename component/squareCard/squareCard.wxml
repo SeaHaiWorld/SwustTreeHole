@@ -1,0 +1,37 @@
+<view class="card">
+  <view class="card-item" id="{{id}}" bindtap="handleClick">
+    <view class="card-title">
+      <view class="card-avatar">
+        <image class="card-avatar" src="{{avatar}}" />
+      </view>
+      <view class="nickNameFlex card-title-txt">
+        {{nickName}}
+      </view>
+    </view>
+    <view class="card-content">
+      <view>{{context}}</view>
+      <view class="card-imgs" wx:if="{{img.length>0?true:false}}">
+        <view wx:for="{{img}}" wx:for-item="item" wx:key="index" >
+          <image class="card-img" style="width:{{imgWidth}};height:{{imgHeight}}" wx:hidden="{{!item?true:false}}" src="{{item}}" mode="{{mode?mode:'aspectFill'}}" />
+        </view>
+      </view>
+    </view>
+    <view class="card-actions">
+      <view class="comments-publishDate">
+        <wux-timeago to="{{publishDate}}" prefixCls=""lang="zh_CN" refreshable />
+      </view>
+      <view class="icon-path" catchtap="handleLike">
+        <image class="star" src="{{value?value:starDot}}" animation="{{aniA}}" />
+        <view class="star-content">
+          <text>{{star}}</text>
+        </view>
+      </view>
+      <view class="icon-path" catchtap="handleClick">
+        <image class="comments" src="https://tree-home-1259219507.cos.ap-chengdu.myqcloud.com/%E8%AF%84%E8%AE%BA%20(1).png" />
+        <view class="comments-content">
+          <text>{{comment}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,42 @@
+@import "../../colorui/icon.wxss";
+
+.scroll {
+    z-index: 1;
+}
+.search {
+    background: linear-gradient(#eeeeee, #f8f8f8);
+}
+
+.Icon {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+}
+
+.float {
+    position: fixed;
+    right: 30rpx;
+    bottom: 30rpx;
+}
+
+.swiper {
+    margin:15rpx 0rpx #eeeeee;
+    height: 220rpx;
+    background: linear-gradient(#f8f8f8,#eeeeee);
+    padding-top: 16rpx;
+}
+
+.li{
+  width: 100%;
+  height: 210rpx;
+}
+.li1{
+  width: 486rpx;
+  /* margin: 0 auto; */
+  border-radius: 18rpx;
+  height:220rpx;
+  transform: scale(0.9);
+}
+.selected{
+  transform: scale(1)
+}

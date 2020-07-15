@@ -1,0 +1,38 @@
+<view style="position:fixed;z-index:1;width: 100%;">
+  <wux-navbar theme="stable">
+    <wux-icon slot="left" type="ios-arrow-back" top="8" size="21" bindtap="returnIndex"/>
+    <view>校园广场</view>
+    <!-- <wux-icon slot="right" type="ios-more" size="23" /> -->
+  </wux-navbar>
+  <view class="search">
+    <search bindonsearch="handleSearch" bindonInput="handleInput" bindonFeedTap="onFeedTap" />
+  </view>
+  <view style="background: linear-gradient(#f8f8f8,#eeeeee)">
+    <view class="Icon" style="position:fixed;right: 0;bottom: 10%;transform: translate(-50%, -50%);background-color:#387ef5;text-align:center;box-shadow: 1rpx 1rpx 30rpx #387ef5;z-index:1" bindtap="onTap">
+      <text class="cuIcon-discoverfill" style="font-size:62rpx"></text>
+    </view>
+    <!-- <tab items="{{littleList}}" binditemtap="changeTab" selected="{{current}}" theme="smallBar" height="100"></tab> -->
+  </view>
+</view>
+<view style="background-color:#eeeeee;padding-top:{{StatusBar+CustomBar+16}}px;z-index:6；overflow-x：hidden">
+  <swiper class="swiper" indicator-dots="{{swiper.indicatorDots}}" autoplay="{{swiper.autoplay}}" interval="{{swiper.interval}}" duration="{{swiper.duration}}" circular="{{swiper.circular}}" next-margin="105rpx" previous-margin="135rpx" current-item-id="{{currentItemId}}"
+    bindchange="swiperChange">
+    <block wx:for="{{backClass}}" wx:key="index">
+      <swiper-item item-id="{{index}}" data-item-id="{{index}}" bindtap="clickChange">
+        <view class="li">
+          <image class='li1 {{currentItemId == index ? "selected" : ""}}' src="{{item}}"></image>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <block wx:for="{{list}}" wx:for-item="item" wx:key="index">
+    <card nickName="{{item.nickName}}" id="{{item.remarkId}}" context="{{item.content}}" star="{{item.stars?item.stars:0}}" flag="{{item.flag}}" img="{{item.imgUrl?item.imgUrl:[]}}" imgWidth="{{item.imgWidth}}" imgHeight="{{item.imgHeight}}" mode="{{item.mode}}" avatar="{{item.avatarUrl?item.avatarUrl:''}}" comment="{{item.comments?item.comments:0}}"
+      publishDate="{{item.publishDate}}" bindhandleLike="handleLike" bindhandleClick="handleClick" labelList="{{item.topic}}"></card>
+  </block>
+  <view class="loading">
+    <view class="weui-loadmore">
+      <view class="{{total/8>=pagination.currentPage?weui-loading:''}}"></view>
+      <view class="weui-loadmore__tips">{{pagination.total/pagination.pageSize>pagination.currentPage?"加载中":"加载中..."}}</view>
+    </view>
+  </view>
+</view>

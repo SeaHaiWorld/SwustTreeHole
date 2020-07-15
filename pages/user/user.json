@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "年轮Swust",
+    "navigationBarBackgroundColor": "#99FFCC",
+    "navigationStyle": "custom",
+    "usingComponents": {
+        "movebutton": "../../component/button/suspension_button/suspension_button"
+    },
+    "enablePullDownRefresh": true
+}

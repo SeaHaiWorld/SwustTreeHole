@@ -1,0 +1,11 @@
+/* component/button/base_button/base_button.wxss */
+.component {
+  align-items: center;
+  justify-content: center;
+}
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 100;
+}

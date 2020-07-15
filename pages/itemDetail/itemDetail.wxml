@@ -1,0 +1,52 @@
+<scroll-view style=" background-color:#eeeeee"
+    ><wux-navbar theme="default">
+    <wux-icon slot="left" type="ios-arrow-back" top="8" size="21" bindtap="returnIndex"/>
+    <view></view>
+    <!-- <wux-icon slot="right" type="ios-more" size="23" /> -->
+  </wux-navbar><view class="weui-article" style=" background-color:white">
+        <view class="weui-article__section">
+            <view class="detail-title">
+                <view>
+                    <image src="{{remark.avatarUrl}}" style="height:50px;width:50px;border-radius:25px;float:left;" />
+                </view>
+                <view class="weui-article__h2 nickName">{{remark.nickName}}</view>
+                <view class="detail-publishDate" style="padding-bottom:25rpx;padding-left:18%">{{remark.publishDate}}</view>
+            </view>
+            <view class="weui-article__section">
+                <view class="weui-article__p" style="padding-top:20rpx;line-height:55rpx;">
+                    {{remark.content}}
+                </view>
+                <view class="weui-article__p" style="padding-top:15rpx;margin:0;">
+                    <block wx:for="{{remark.imgUrl?remark.imgUrl:[]}}" wx:for-item="item" wx:key="index">
+                       <image class="card-img" hidden="{{!item?true:false}}" src="{{item}}" mode="aspectFill" style="height: 300rpx,width:300rpx" />
+                    </block>
+                </view>
+        <view wx:for="{{remark.topic}}" wx:for-item="item" wx:for-index="index" wx:key="index" class="label">{{item}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="newcomment">
+        <view class="title">最新评论</view>
+        <view class="commentlist"
+            ><view class="commentitem" wx:if="{{comments?true:false}}" wx:for="{{comments}}" wx:for-item="item" wx:key="index">
+                <card
+                    nickName="{{item.nickName}}"
+                    id="{{item.remarkid}}"
+                    context="{{item.context}}"
+                    star="{{item.star?item.star:0}}"
+                    img="{{item.imgurl?item.imgurl:[]}}"
+                    avatar="{{item.avatarUrl?item.avatarUrl:''}}"
+                    comment="{{item.comment?item.comment:0}}"
+                    publishDate="{{item.publishdate}}"
+                    bindhandleLike="handleLike"
+                    bindhandleClick="handleClick"
+                ></card>
+                </view>
+            <view class="nocomment">{{comments.length>0?"没有更多了...":"暂时没有评论哦~"}}</view>
+            <!-- <view class="nocomment" wx:if="{{comments?true:false}}"></view> -->
+        </view>
+    </view>
+    <view class="buttomInput">
+        <buttomInput icon="https://tree-home-1259219507.cos.ap-chengdu.myqcloud.com/%E5%9B%9B%E5%8F%B6%E8%8D%89.png" iconSize="50" bgColor="#eeeeee" bind:commit="onButtonTap" bindonclean="handleClean" value="{{value}}" bindinput="handleInput"></buttomInput>
+    </view>
+</scroll-view>

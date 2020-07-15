@@ -1,0 +1,33 @@
+<view style="z-index:110">
+  <cu-custom bgColor="none-bg text-white" isBack="{{true}}">
+    <view slot="backText">返回</view>
+    <view slot="content"></view>
+  </cu-custom>
+</view>
+<view class="bg" style="position: fixed;z-index:-1">
+</view>
+<view style="padding-top:230rpx;z-index:1">
+  <view class="Icon" style="position: absolute;left: 50%;transform: translate(-50%, -50%);background-color:#33cd5f;text-align:center;box-shadow: 1rpx 1rpx 30rpx #33cd5f;z-index:1" bindtap="publish">
+    <wux-icon top="18" type="ios-mail-open" left="-2" size="35" color="white" />
+  </view>
+  <view class="cu-form-group flex padding justify-center" style="border-top:0rpx;padding: 135rpx 0 35rpx;border-radius: 65rpx 65rpx 0 0;height:50rpx;z-index:2">
+    <view>欢迎大家积极反馈哦！</view>
+  </view>
+  <view class="cu-form-group publishtextarea" style="border-top:0rpx;z-index:2">
+    <textarea placeholder="发现了BUG、或者有什么功能建议都可以反馈给我们，当然也可以向我们倾吐心事..." style="height: 16em" maxlength="-1" disabled="{{modalName!=null}}" placeholder-class="placeholder" bindconfirm="" bindinput="bindKeyInput" value="{{iptVal}}">
+    </textarea>
+  </view>
+  <view class="cu-form-group" style="border-top:0rpx;z-index:2">
+    <view class="grid col-3 grid-square flex-sub">
+      <view class="padding-xs bg-img" wx:for="{{files}}" wx:key="index">
+        <image src="{{item}}"></image>
+        <view class="cu-tag bg-red">
+          <text class="icon-close" bindtap="removeAttachment" data-idx="{{index}}"></text>
+        </view>
+      </view>
+      <view class="padding-xs solids">
+        <text class="icon-cameraadd" bindtap="bindChooseImage"></text>
+      </view>
+    </view>
+  </view>
+</view>

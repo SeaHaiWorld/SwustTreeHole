@@ -1,0 +1,17 @@
+<view>
+  <!-- <image src="https://tree-home-1259219507.cos.ap-chengdu.myqcloud.com/auth.png" class="png1" mode="widthFix" ></image> -->
+  <view class="UCenter-bg" style="background-image: url('https://tree-home-1259219507.cos.ap-chengdu.myqcloud.com/2.png');">
+    <image src="https://tree-home-1259219507.cos.ap-chengdu.myqcloud.com/auth.png" class="png" mode="widthFix"></image>
+    <view class="text-xl"
+      >SwustTree
+      <text class="text-df"></text>
+    </view>
+    <view class="margin-top-sm">
+      <text>By:Swust</text>
+    </view>
+  </view>
+  <view class="padding-xl">
+    <button class="cu-btn  bg-blue shadow lg block" bindtap="onPagetoSquare" style="margin-bottom:50rpx;">Go to Square!</button>
+    <button class="cu-btn  bg-green shadow lg block" open-type="getUserInfo" bindgetuserinfo="onGetUserInfo">Login</button>
+  </view>
+</view>

@@ -1,0 +1,11 @@
+{
+  "component": true,
+  "usingComponents": {
+    "icon_button": "../button/icon_button/icon_button",
+    "wux-row": "../../dist/row/index",
+    "wux-col": "../../dist/col/index",
+    "wux-segmented-control": "../../dist/segmented-control/index",
+    "wux-timeago": "../../dist/timeago/index",
+    "wux-image": "../../dist/image/index"
+  }
+}

@@ -1,0 +1,132 @@
+.card {
+  background: #eeeeee;
+  padding: 0rpx 0rpx 15rpx;
+}
+
+.card-item {
+  background: #ffffff;
+  padding-top: 3rpx;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.card-item-hover {
+  //opacity: 0.5;
+  //background: #f7f7f7;
+  box-shadow: 0rpx 10rpx 50rpx 2rpx rgba(1, 1, 1, 0.1);
+}
+
+.card-title {
+  padding: 10rpx 15rpx 0;
+  display: flex;
+  width: 100%;
+  height: 90rpx;
+  border-bottom: 1rpx solid #eeeeee;
+}
+
+.card-imgs {
+  display: flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  /* justify-content:center; */
+  width:100%;
+  max-height:420rpx;
+  margin-top:20rpx;
+}
+
+.card-img {
+  width:210rpx;
+  height:210rpx;
+  margin:0 10rpx;
+}
+
+.label{
+  height:50rpx;
+  float:left;
+  margin-left: 2%;
+  line-height:50rpx;
+  border-radius:35rpx;
+  font-size:14px;
+  border:1px solid #DBDBDB;
+  text-align: center;
+  color: #999999;
+  width:12%;
+  background-color:#FFA404;
+}
+
+.card-avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+}
+.nickNameFlex {
+  flex: auto;
+  padding-left: 30rpx;
+}
+
+.card-title-txt {
+  display: inline-block;
+  color: black;
+}
+.card-content {
+  padding: 10rpx 25rpx 10rpx;
+  font-size: 32rpx;
+  line-height: 55rpx;
+  color: #5b5b5b; 
+  overflow:hidden;
+}
+.context{
+ text-overflow:ellipsis;
+ overflow:hidden;
+  display:-webkit-box; 
+-webkit-box-orient:vertical;
+-webkit-line-clamp:3;
+}
+.card-content-text {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.card-actions {
+  width: 100%;
+  height: 70rpx;
+  display: flex;
+  flex-direction: row;
+  text-align: right;
+  padding-top: 25rpx;
+}
+
+.comments-publishDate {
+  width: 520rpx;
+  height: 32rpx;
+  font-size: 27rpx;
+  text-align: left;
+  padding: 0 0 0 25rpx;
+  color: #5b5b5b;
+}
+
+.star {
+  padding: 9rpx 12rpx 0 0;
+  width: 32rpx;
+  height: 32rpx;
+}
+.star-content {
+  width: 45rpx;
+  font-size: 30rpx;
+  text-align: center;
+}
+
+.icon-path {
+  width: 100rpx;
+  text-align: center;
+  display: flex;
+}
+
+.comments {
+  padding: 8rpx 12rpx 0 0;
+  width: 33rpx;
+  height: 33rpx;
+}
+.comments-content {
+  width: 45rpx;
+  font-size: 30rpx;
+  text-align: center;
+}

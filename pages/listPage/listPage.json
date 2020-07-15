@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "西科树屋",
+  "navigationBarBackgroundColor": "#99FFCC",
+  "usingComponents": {
+    "card": "../../component/owncard/owncard",
+    "commentcard": "../../component/mycommentcard/mycommentcard",
+    "movebutton": "../../component/button/suspension_button/suspension_button"
+  },
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": true
+}

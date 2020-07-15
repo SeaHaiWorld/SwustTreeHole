@@ -1,0 +1,120 @@
+{
+	"projectid": "1109918821_TreeHome",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"enhance": false,
+		"postcss": false,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": true,
+		"autoAudits": true,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"uglifyFileName": true,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"compileHotReLoad": false,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"useIsolateContext": true,
+		"useCompilerModule": false,
+		"userConfirmedUseCompilerModuleSwitch": false,
+		"remoteDebugLogEnable": false
+	},
+	"qqLibVersion": "1.8.0",
+	"compileType": "miniprogram",
+	"createTime": 1573725043905,
+	"accessTime": 1573725043905,
+	"packOptions": {
+		"ignore": []
+	},
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"qqappid": "1109918821",
+	"projectname": "TreeHome",
+	"scripts": {
+		"beforeCompile": "",
+		"beforePreview": "",
+		"beforeUpload": ""
+	},
+	"appid": "wxf2d8896e20719491",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "pages/Square/Square",
+					"pathName": "pages/Square/Square",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/itemDetail/itemDetail",
+					"pathName": "pages/itemDetail/itemDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "pages/publish/publish",
+					"pathName": "pages/publish/publish",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/feed/feed",
+					"pathName": "pages/feed/feed",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/auth/auth",
+					"pathName": "pages/auth/auth",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/user/user",
+					"pathName": "pages/user/user",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,20 @@
+<view class="card">
+    <view class="card-item" hover-class="card-item-hover" id="{{id}}" bindtap="handleClick">
+        <view class="card-title">
+            <view class="card-avatar">
+                <image class="card-avatar" src="{{avatar}}" />
+            </view>
+            <view
+                style="display:flex;flex-direction:column;height:120rpx;"
+            >
+                <view class="card-title-txt" style="font-size:26rpx;height:30rpx;">
+                    {{nickName}}
+                </view>
+                <view class="card-comment-txt" style="font-size:28rpx;height:{{titleheight}}rpx">
+                    {{comment}}
+                </view>
+                <view class="commentdate" style="font-size:18rpx;height:{{titleheight}}rpx"><view> {{publishDate}}</view> </view>
+            </view>
+        </view>
+    </view>
+</view>

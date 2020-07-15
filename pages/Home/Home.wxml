@@ -1,0 +1,38 @@
+<view class="background">
+    <view>
+        <image class="sun" src="{{sun}}" animation="{{sunAnimation}}"></image>
+        <image class="cloud1" src="{{cloud}}" animation="{{aniA}}"></image>
+        <image class="cloud2" src="{{cloud}}" animation="{{aniC}}"></image>
+        <image class="cloud3" src="{{cloud}}" animation="{{aniB}}"></image>
+    </view>
+    <image class="annual" src="https://tree-home-1259219507.cos.ap-chengdu.myqcloud.com/%E4%B8%BB%E9%A1%B52.gif"></image>
+    <view>
+        <view class="iconA">
+            <image class="icon-poA" src="{{poTag}}" animation="{{aniA}}"></image>
+            <text class="icon-textA" animation="{{aniA}}" bindtap="handleClick" id="{{moodList[0].tagid}}">{{moodList[0].value}} </text>
+        </view>
+        <view class="iconB">
+            <image class="icon-poB" src="{{poTag}}" animation="{{aniB}}"></image>
+            <text class="icon-textB" animation="{{aniB}}" bindtap="handleClick" id="{{moodList[1].tagid}}">{{moodList[1].value}} </text>
+        </view>
+        <view class="iconC">
+            <image class="icon-poC" src="{{poTag}}" animation="{{aniC}}"></image>
+            <text class="icon-textC" animation="{{aniC}}" bindtap="handleClick" id="{{moodList[2].tagid}}">{{moodList[2].value}} </text>
+        </view>
+        <view class="iconD">
+            <image class="icon-poD" src="{{poTag}}" animation="{{aniD}}"></image>
+            <text class="icon-textD" animation="{{aniD}}" bindtap="handleClick" id="{{moodList[3].tagid}}">{{moodList[3].value}} </text>
+        </view>
+        <view class="iconE">
+            <image class="icon-poE" src="{{poTag}}" animation="{{aniE}}"></image>
+            <text class="icon-textE" animation="{{aniE}}" bindtap="handleClick" id="{{moodList[4].tagid}}">{{moodList[4].value}} </text>
+        </view>
+    </view>
+    <view class="button-icon">
+        <view class="squareDot" bindtap="squareClick" />
+        <image class="icon-bottom" src="{{square}}"></image>
+        <text class="squaretext">广场</text>
+        <text class="leaftext">个人</text>
+        <image class="icon-leaf" src="{{leaf}}" bindtap="leafClick"></image>
+    </view>
+</view>
