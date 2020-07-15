@@ -1,0 +1,14 @@
+{
+  "apps": [{
+    "name": "thinkjs_app",
+    "script": "production.js",
+    "cwd": "/home/ubuntu/thinkjs_app",
+    "exec_mode": "fork",
+    "max_memory_restart": "1G",
+    "autorestart": true,
+    "node_args": [],
+    "args": [],
+    "env": {
+    }
+  }]
+}

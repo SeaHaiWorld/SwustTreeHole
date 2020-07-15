@@ -1,0 +1,75 @@
+{
+  "port": 8361,
+  "workers": 1,
+  "stickyCluster": false,
+  "startServerTimeout": 3000,
+  "reloadSignal": "SIGUSR2",
+  "processKillTimeout": 10000,
+  "jsonpCallbackField": "callback",
+  "jsonContentType": "application/json",
+  "jsonpContentType": "application/javascript",
+  "errnoField": "code",
+  "errmsgField": "msg",
+  "defaultErrno": 1000,
+  "validateDefaultErrno": 1001,
+  "default_module": "api",
+  "host": "127.0.0.1",
+  "resource_on": true,
+  "cache": {
+    "type": "file",
+    "file": {
+      "timeout": 86400000,
+      "cachePath": "C:\\Users\\Yang\\Desktop\\项目\\thinkjs_wxapp\\runtime\\cache",
+      "pathDepth": 1,
+      "gcInterval": 86400000
+    }
+  },
+  "model": {
+    "type": "mysql",
+    "mysql": {
+      "logConnect": true,
+      "logSql": true,
+      "database": "小程序",
+      "encoding": "utf8mb4",
+      "host": "49.233.168.170",
+      "port": "3306",
+      "user": "yang",
+      "password": "yang",
+      "dateStrings": true
+    }
+  },
+  "session": {
+    "type": "file",
+    "file": {
+      "cookie": {
+        "name": "thinkjs"
+      },
+      "sessionPath": "C:\\Users\\Yang\\Desktop\\项目\\thinkjs_wxapp\\runtime\\session"
+    }
+  },
+  "view": {
+    "type": "nunjucks",
+    "nunjucks": {
+      "viewPath": "C:\\Users\\Yang\\Desktop\\项目\\thinkjs_wxapp\\view",
+      "sep": "_",
+      "extname": ".html"
+    }
+  },
+  "logger": {
+    "type": "console",
+    "console": {},
+    "file": {
+      "backups": 10,
+      "absolute": true,
+      "maxLogSize": 51200,
+      "filename": "C:\\Users\\Yang\\Desktop\\项目\\thinkjs_wxapp\\logs\\app.log"
+    },
+    "dateFile": {
+      "level": "ALL",
+      "absolute": true,
+      "pattern": "-yyyy-MM-dd",
+      "alwaysIncludePattern": true,
+      "filename": "C:\\Users\\Yang\\Desktop\\项目\\thinkjs_wxapp\\logs\\app.log"
+    }
+  }
+}
