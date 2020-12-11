@@ -2,8 +2,6 @@
 
 西南科技大学自己的交流圈
 
-![输入图片说明](https://images.gitee.com/uploads/images/2020/0715/150629_6cc25341_5137300.png "IMG_7294.PNG")
-
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0715/150707_1eb43985_5137300.png "IMG_7295.PNG")
 
 ![输入图片说明](https://images.gitee.com/uploads/images/2020/0715/150743_e06c6f29_5137300.png "IMG_7296.PNG")
